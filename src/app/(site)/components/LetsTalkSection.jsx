@@ -9,7 +9,6 @@ export default function LetsTalkSection() {
   return (
     <section className="lets-talk-wrapper show">
       <div className="container mx-auto">
-        {/* TITLE */}
         <div className="title section-title-wrap text-center mb-10">
           <h2 className="text-white">{title}</h2>
           <p className="text-white max-w-3xl mx-auto">
