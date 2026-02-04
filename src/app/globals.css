@@ -117,7 +117,7 @@ html {
   border-radius: 5px;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
   background: #faa61a;
   border: none;
   padding: 10px 6px;
@@ -131,53 +131,13 @@ html {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: .25rem;
-}
+} */
 
 .main-color {
   color: var(--main-site-color);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 5px 9px 0px 9px;
-  margin: 0px 5px;
-  font-size: 15px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
-  color: #8a98b1;
-  text-transform: uppercase;
-  transition: all 0.5s;
-  /* border-bottom: 3px solid #ffffff; */
-}
 
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-  background: none;
-  color: #fff;
-  transition: all 0.5s;
-  /*border-bottom: 3px solid #e15643;*/
-}
-
-.navbar-expand-lg .navbar-nav .nav-link.active {
-  background: none;
-  color: #faa61a;
-  /*border-bottom: 3px solid #e15643;*/
-}
-
-.navbar-nav li:last-child a {
-  border: 2px solid #455062;
-  color: #acbad4 !important;
-  background-color: transparent !important;
-  font-size: 15px !important;
-  line-height: 10px;
-  padding: 13px 15px !important;
-  border-radius: 25px;
-  font-weight: 600 !important;
-  font-family: 'Poppins', sans-serif !important;
-}
-
-.navbar-nav li:last-child a:hover {
-  background: #faa61a !important;
-  color: #ffffff !important;
-}
 
 .mrtopm6 {
   margin-top: -6px;
@@ -548,13 +508,13 @@ html {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .navbar-nav {
+  /* .navbar-nav {
     padding-top: 25px;
     padding-bottom: 25px;
     gap: 5px;
     margin-top: 5px;
     transition: all 0.5s;
-  }
+  } */
 
   .header_style_01 {
     position: absolute;
@@ -567,29 +527,29 @@ html {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .12);
   }
 
-  .navbar-toggler {
+  /* .navbar-toggler {
     background: #faa61a;
     border: none;
     padding: 10px 6px;
     outline: none !important;
     display: block;
     transition: all 0.5s;
-  }
+  } */
 
-  .navbar-nav li:last-child a {
+  /* .navbar-nav li:last-child a {
     font-size: 14px !important;
     line-height: 10px;
     padding: 10px 12px !important;
     width: 95%;
     color: #acbad4 !important;
     background-color: transparent !important;
-  }
+  } */
 
-  .navbar-expand-lg .navbar-nav .nav-link.active {
+  /* .navbar-expand-lg .navbar-nav .nav-link.active {
     background: none;
     color: #faa61a;
     /* border-bottom: 3px solid #e15643; */
-  }
+  } 
 
   .HomeSectionH1 {
     font-size: 32px;
@@ -607,10 +567,10 @@ html {
     left: 29px;
   }
 
-  .navbar-nav li:last-child a:hover {
+  /* .navbar-nav li:last-child a:hover {
     background: #faa61a !important;
     color: #ffffff !important;
-  }
+  } */
 
   .header_style_01.show-header {
     transform: translateY(0);
@@ -706,5 +666,5 @@ html {
     width: 120px;
     height: 90px;
   }
-
-}
+/* 
+} */

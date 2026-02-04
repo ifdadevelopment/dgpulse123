@@ -7,6 +7,7 @@ import ModernNavbar from "./components/ModernNavbar";
 import ContactHeader from "./components/ContactHeader";
 import TopAlert from "./components/TopAlert";
 import SidebarContact from "./components/SidebarContact";
+import ModernNavbarMobile from "./components/ModernNavbarMobile";
 
 export default function SiteLayout({ children }) {
   return (
@@ -16,7 +17,7 @@ export default function SiteLayout({ children }) {
       <MobileContactHeader />
       <ContactHeader />
       <TopAlert />
-      <ModernNavbar />
+      <ModernNavbar/>
       <SidebarContact />
       {children}
       <Footer />

@@ -7,14 +7,15 @@ import { NAVBAR } from '../data/services';
 import "../../styles/navbar.css"
 export default function ModernNavbar() {
   const [open, setOpen] = useState(null);
-
+  const [mobileOpen, setMobileOpen] = useState(false);
   const isOpen = (key) => open === key;
   const buildHref = (menuKey, slug) => `/${menuKey}/${slug}`;
+
   return (
     <div className="modern-nav">
       <header className="main-header">
         <nav className="navbar navbar-expand-lg navbar-custom">
-          <div className="container-fluid px-4">
+          <div className="container-fluid px2-4">
             <Link className="navbar-brand" href="/">
               <Image
                 src="/images/logo.webp"
@@ -22,19 +23,20 @@ export default function ModernNavbar() {
                 width={180}
                 height={50}
                 priority
+                className='img mt-20'
               />
             </Link>
-
             <button
-              className="navbar-toggler"
+              className={`navbar-toggler ${mobileOpen ? '' : 'collapsed'}`}
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
+              aria-expanded={mobileOpen}
+              aria-label="Toggle navigation"
+              onClick={() => setMobileOpen(prev => !prev)}
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon active"></span>
             </button>
-
-            <ul className="navbar-nav ms-auto">
+            <div className={`navbar-collapse show ${mobileOpen ? 'block' : 'hidden'}`} id="navbarNav">
+                  <ul className="navbar-nav ms-auto ">
               {NAVBAR.map((menu) => {
                 const hasMega = menu.type === 'mega';
                 const hasDropdown = menu.type === 'dropdown';
@@ -54,7 +56,14 @@ export default function ModernNavbar() {
                     onMouseLeave={() => setOpen(null)}
                   >
                     {hasMega || hasDropdown ? (
-                      <span className="nav-link">
+                      <span
+                        className="nav-link"
+                        onClick={() =>
+                          mobileOpen
+                            ? setOpen(isOpen(menu.key) ? null : menu.key)
+                            : null
+                        }
+                      >
                         {menu.label}
                         <i className="fas fa-chevron-down dropdown-arrow"></i>
                       </span>
@@ -64,22 +73,21 @@ export default function ModernNavbar() {
                       </Link>
                     )}
                     {hasMega && (
-                      <div
-                        className={`dropdown-menu ${isOpen(menu.key) ? 'show' : ''
-                          }`}
-                        style={{
-                          opacity: isOpen(menu.key) ? 1 : 0,
-                          transform: isOpen(menu.key)
-                            ? 'translateY(0)'
-                            : 'translateY(-20px)',
-                        }}
-                      >
+                        <div
+                          className={`dropdown-menu ${isOpen(menu.key) ? 'show' : ''}`}
+                          style={{
+                            opacity: isOpen(menu.key) ? 1 : 0,
+                            transform: isOpen(menu.key)
+                              ? 'translateY(0)'
+                              : 'translateY(-20px)',
+                          }}
+                        >
                         <div className="container-fluid mega-menu-content">
                           <div className="row1">
                             {menu.columns.map((col, i) => (
                               <div
                                 key={i}
-                                className="col-lg-3 col-md-6 mega-column"
+                                className=" mega-column"
                               >
                                 <h6 className="mega-title">{col.title}</h6>
 
@@ -101,8 +109,6 @@ export default function ModernNavbar() {
                         </div>
                       </div>
                     )}
-
-                    {/* 🔹 DROPDOWN */}
                     {hasDropdown && (
                       <ul
                         className={`dropdown-menu ${isOpen(menu.key) ? 'show' : ''
@@ -118,7 +124,7 @@ export default function ModernNavbar() {
                           <li key={i} className="dropdown-list-item">
                             <Link
                               href={`/${l.slug}`}
-                              className="dropdown-list-item"
+                              className="dropdown-item"
                               onClick={() => setOpen(null)}
                             >
                               {l.label}
@@ -130,8 +136,6 @@ export default function ModernNavbar() {
                   </li>
                 );
               })}
-
-              {/* CTA BUTTON */}
               <li className="nav-item">
                 <Link
                   href="/free-website-analysis"
@@ -146,6 +150,8 @@ export default function ModernNavbar() {
                 </Link>
               </li>
             </ul>
+            </div>
+        
           </div>
         </nav>
       </header>

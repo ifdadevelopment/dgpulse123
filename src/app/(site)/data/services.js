@@ -2707,15 +2707,15 @@ export const NAVBAR = [
 
   {
     id: "aboutMenu",
-    key: "about",
+    key: "aboutus",
     label: "About",
-    slug: "/about",
+    slug: "/aboutus",
     type: "mega",
     columns: [
       {
         title: "Company",
         links: [
-          { label: "About Us", slug: "about-us" },
+          { label: "About Us", slug: "/" },
           { label: "Our Approach", slug: "contact-us" },
           { label: "Our Team", slug: "life-at-ezrankings" },
           { label: "Careers", slug: "career" },
@@ -2739,21 +2739,15 @@ export const NAVBAR = [
       {
         title: "Design & Development",
         links: [
+          { label: "Design & Development", slug: "web-design-development-packages" },
           { label: "Website Design Packages", slug: "web-design-development-packages" },
-        ],
-      },
-      {
-        title: "YouTube Marketing",
-        links: [
+          { label: "YouTube Marketing", slug: "youtube-marketing-packages" },
           { label: "YouTube Packages", slug: "youtube-marketing-packages" },
-        ],
-      },
-      {
-        title: "Branding",
-        links: [
+          { label: "Branding", slug: "orm-packages" },
           { label: "ORM Packages", slug: "orm-packages" },
         ],
       },
+
       {
         title: "Resources",
         links: [
@@ -3250,3 +3244,55 @@ export const letsTalkData = {
     url: "https://www.ezrankings.com/book-a-call.html",
   },
 };
+export const WHITE_LABEL_PROCESS = [
+  {
+    id: "sign-up-our-plans",
+    step: 1,
+    title: "Sign Up Our Plans",
+    short: "Sign Up <br/>Our Plans",
+    content: [
+      "Take the first step towards enhancing your business by providing the required information about yourself and signing up for our white label SEO programs.",
+      "Explore our plans and choose the SEO reseller plan that aligns with your goals. Our experts are always available to guide you."
+    ],
+  },
+  {
+    id: "kick-off-projects",
+    step: 2,
+    title: "Kick Off the Projects",
+    short: "Kick Off <br/> the Projects",
+    content: [
+      "Share client details and requirements with our team.",
+      "We create a custom strategy aligned with your clients’ goals."
+    ],
+  },
+  {
+    id: "resource-allocation",
+    step: 3,
+    title: "Resource Allocation",
+    short: "Resource <br/>Allocation",
+    content: [
+      "We assign dedicated SEO experts based on task expertise.",
+      "Advanced SEO tools are used to track and optimize performance."
+    ],
+  },
+  {
+    id: "real-time-updates",
+    step: 4,
+    title: "Real-Time Updates",
+    short: "Real-Time <br/>Updates",
+    content: [
+      "Get transparent, real-time project updates.",
+      "Stay informed throughout the entire campaign lifecycle."
+    ],
+  },
+  {
+    id: "white-label-reporting",
+    step: 5,
+    title: "White Label Reporting",
+    short: "White Label <br/>Reporting",
+    content: [
+      "Receive fully branded white label SEO reports.",
+      "Reports include your logo, brand details, and client-ready formatting."
+    ],
+  },
+];
