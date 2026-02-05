@@ -24,6 +24,20 @@ export default function ModernNavbar() {
   useEffect(() => {
     setOpen(null);
   }, [isMobile]);
+  useEffect(() => {
+  if (mobileOpen) {
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+  } else {
+    document.body.style.overflow = "";
+    document.body.style.height = "";
+  }
+
+  return () => {
+    document.body.style.overflow = "";
+    document.body.style.height = "";
+  };
+}, [mobileOpen]);
   const isMegaMobileActive = (menuKey) =>
     open === menuKey || (typeof open === "string" && open.startsWith(`${menuKey}-`));
 
@@ -174,8 +188,6 @@ export default function ModernNavbar() {
 
                         </>
                       )}
-
-
                       {hasDropdown && (
                         <ul
                           className={`dropdown-menu ${isOpen(menu.key) ? 'show' : ''

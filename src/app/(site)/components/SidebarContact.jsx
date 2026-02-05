@@ -31,7 +31,7 @@ export default function SidebarContact() {
 
   return (
     <div
-      className={`sidebar-contact ${open ? 'show active' : ''} 
+      className={`sidebar-contact  ${open ? 'show active' : ''} 
       fixed right-0 top-0 z-50 h-full w-full sm:w-[380px] bg-white shadow-xl`}
     >
       <div

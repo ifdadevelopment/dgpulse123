@@ -48,8 +48,32 @@ body {
   font-size: 18px;
   color: var(--black);
   line-height: 33px;
-  background: #fff !important
+  background: #fff !important;
+  padding: 0;
+  margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -62,7 +86,11 @@ html {
   padding: 10px 20px;
   transition: background 0.3s ease, color 0.3s ease;
 }
-
+.service-detail-page header,
+.service-detail-page .main-header,
+.service-detail-page .navbar {
+  position: static !important;
+}
 /* BASE HEADER */
 .header_style_01 {
   position: fixed;

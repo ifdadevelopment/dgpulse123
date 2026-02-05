@@ -2,16 +2,17 @@
 
 import Link from "next/link";
 import { blogFaqData } from "../data/services";
-import "../../styles/navbar.css"
+import "../../styles/navbar.css";
+
 export default function BlogFaqSection({ slug }) {
   const data = blogFaqData[slug];
   if (!data) return null;
 
   return (
     <section className="blog-faq faq-wrapper show">
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-2/4">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
             <div className="faq-wrap">
               <div className="blog-post blog-postnew1">
                 <h3>
@@ -27,7 +28,7 @@ export default function BlogFaqSection({ slug }) {
                       <div className="blog-admin-date">
                         <span className="admin">
                           <i className="fa fa-user"></i>{" "}
-                          <Link href={blog.authorUrl}>
+                          <Link href={blog.authorUrl} rel="author">
                             {blog.author}
                           </Link>
                         </span>
@@ -49,7 +50,9 @@ export default function BlogFaqSection({ slug }) {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-2/4">
+
+          {/* FAQ COLUMN */}
+          <div className="col-md-6">
             <div className="blog-post">
               <h3>
                 {data.faqs.title}{" "}
@@ -71,6 +74,7 @@ export default function BlogFaqSection({ slug }) {
                           data-bs-toggle="collapse"
                           data-bs-target={`#collapse${i}`}
                           aria-expanded="false"
+                          aria-controls={`collapse${i}`}
                         >
                           {faq.question}
                           <span className="fa-stack fa-2x">
@@ -84,6 +88,7 @@ export default function BlogFaqSection({ slug }) {
                     <div
                       id={`collapse${i}`}
                       className="accordion-collapse collapse"
+                      aria-labelledby={`heading${i}`}
                       data-bs-parent="#FaqList"
                       itemScope
                       itemType="https://schema.org/Answer"
@@ -97,6 +102,7 @@ export default function BlogFaqSection({ slug }) {
                   </div>
                 ))}
               </div>
+
             </div>
           </div>
         </div>

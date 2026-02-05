@@ -3296,46 +3296,43 @@ export const WHITE_LABEL_PROCESS = [
     ],
   },
 ];
-export const traits = [
-  {
-    title: 'Web Design',
-    slug: 'web-development-company-india',
-    image: '/images/wd-icon.png',
+
+export const traits = {
+  "web-development-company-india": {
+    heading: "More Than a Web Development Agency",
     description:
-      'If you want dedicated web design services, we provide that as well.',
-    heading: 'Professional Web Design Services',
-    intro:
-      'We design visually stunning, user-friendly websites that help businesses build trust and convert visitors into customers.',
+      "We are a trusted custom Indian web development company and also your holistic digital partner. By that we mean, we’re more than a web development company. Digital Pulse provides complete digital solutions to help a business escalate its online presence, and sales.",
+    services: [
+      {
+        title: "Web Design",
+        image: "/images/wd-icon.png",
+        description:
+          "If you want dedicated web design services, we provide that as well...",
+        link: "/web-design-company-india.html",
+      },
+      {
+        title: "App Development",
+        image: "/images/ad-icon.png",
+        description:
+          "Whether your business requires a hybrid, native, or web app...",
+        link: "/mobile-application-development.html",
+      },
+      {
+        title: "Branding",
+        image: "/images/bran-icon.png",
+        description:
+          "For your business branding, we adopt numerous channels...",
+        link: "/online-reputation-management-services.html",
+      },
+      {
+        title: "Digital Marketing",
+        image: "/images/TESTED.png",
+        description:
+          "We provide 360 digital services such as PPC, SEO, content...",
+        link: "/",
+      },
+    ],
   },
-  {
-    title: 'App Development',
-    slug: 'app-development',
-    image: '/images/ad-icon.png',
-    description:
-      'Whether your business requires a hybrid, native, or web app, we can deliver it.',
-    heading: 'Custom Mobile App Development',
-    intro:
-      'From idea to launch, we build scalable and high-performance mobile applications tailored to your business needs.',
-  },
-  {
-    title: 'Branding',
-    slug: 'branding',
-    image: '/images/bran-icon.png',
-    description:
-      'We help improve user perception of your business through branding.',
-    heading: 'Branding & Online Reputation',
-    intro:
-      'We create strong brand identities that connect emotionally with your audience and build long-term credibility.',
-  },
-  {
-    title: 'Digital Marketing',
-    slug: 'digital-marketing',
-    image: '/images/icon/wd/TESTED.png',
-    description:
-      '360° digital services including SEO, PPC, content, and social media.',
-    heading: 'Result-Driven Digital Marketing',
-    intro:
-      'Our data-driven digital marketing strategies help businesses grow traffic, leads, and revenue consistently.',
-  },
-];
+};
+
 

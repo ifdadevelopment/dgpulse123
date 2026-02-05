@@ -48,7 +48,7 @@ export default async function ServicePage({ params }) {
   if (!pageData) return notFound();
 
   return (
-    <>
+    <main className="inner-page">
       <InnerPageHeader slug={slug} base="services" />
        <PageAboutSection slug={slug} />
        <EmpoweringSection slug={slug} />
@@ -58,7 +58,7 @@ export default async function ServicePage({ params }) {
        <LetsTalkSection slug={slug} />
        <TraitsSection slug={slug}/>
        <FullStackProcessSection slug={slug} />
-       <BlogFaqSection slug={slug} />
-    </>
+       {/* <BlogFaqSection slug={slug} /> */}
+    </main>
   );
 }

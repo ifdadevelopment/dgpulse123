@@ -10,7 +10,7 @@ export default function InnerPageHeader({ slug, base = "services" }) {
   return (
     <main className="inner-page-title">
       <div className="breadcrumb-top">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-2">
           <div className="row">
             <div className="col-md-12">
               <div className="left">
