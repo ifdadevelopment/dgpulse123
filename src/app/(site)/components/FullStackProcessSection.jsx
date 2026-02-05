@@ -25,21 +25,13 @@ export default function FullStackProcessSection({ slug }) {
   return (
     <section className="reseller-programs-work res-pro-work-new show">
       <div className="container mx-auto px-4">
-        {/* Heading (same wrapper classes) */}
         <div className="section-title-wrap text-center pb30">
           <h2 className="text-2xl lg:text-4xl font-semibold">{data.heading}</h2>
           <p className="mt-3 text-gray-600 max-w-5xl mx-auto">{data.description}</p>
         </div>
-
-        {/* Responsive Layout:
-            - mobile: stack
-            - md: tabs left + content right
-            - lg: tabs top row + content below full width
-        */}
         <div className="row">
           <div className="col-md-12">
             <div className="reseller-programs-tab">
-              {/* Tabs */}
               <ul
                 className="
                   nav nav-tabs
@@ -71,12 +63,9 @@ export default function FullStackProcessSection({ slug }) {
 
                         <div className={`back-circle ${step.step === 1 ? "ba1" : ""}`}>
                           <div className="frnt-cir">
-                            {/* Match original label with <br/> breaks */}
                             {String(step.label)
                               .split(" ")
                               .reduce((acc, word, idx, arr) => {
-                                // keep same idea as HTML: manual line breaks for 2-word labels
-                                // (You can store <br> already in data if you want perfect control)
                                 const shouldBreak =
                                   arr.length >= 2 && idx === Math.floor(arr.length / 2) - 1;
                                 acc.push(word);
@@ -91,12 +80,6 @@ export default function FullStackProcessSection({ slug }) {
                   );
                 })}
               </ul>
-
-              {/* Content wrapper:
-                  - mobile: below tabs
-                  - md: right side (grid)
-                  - lg: full width below (like HTML)
-               */}
               <div
                 className="
                   mt-8
@@ -105,12 +88,8 @@ export default function FullStackProcessSection({ slug }) {
                   lg:grid-cols-1
                 "
               >
-                {/* Spacer column for md only (to keep content on right of vertical tabs) */}
                 <div className="hidden md:block lg:hidden" />
-
-                {/* Content */}
                 <div className="tab-content">
-                  {/* Render only active pane (matches “only one tab show”) */}
                   <div
                     key={activeStep}
                     id={panelId(activeStep)}
