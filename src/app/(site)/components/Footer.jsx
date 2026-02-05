@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-gradient-to-br from-[#0b1a3a] via-[#0e1430] to-[#010002] text-white font-publicSans">
-        <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link href="/" className="block">
               <Image
@@ -150,7 +150,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white/20 py-6 px-6">
-          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 text-sm opacity-90">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 text-sm opacity-90">
             <p>
               © {new Date().getFullYear()}{" "}
               <strong>DigitalPulse Solutions</strong> — All Rights Reserved.

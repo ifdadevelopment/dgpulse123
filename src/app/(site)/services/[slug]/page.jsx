@@ -9,6 +9,7 @@ import BlogFaqSection from "../../components/BlogFaqSection";
 import WhyEzSection from "../../components/WhyEzSection";
 import IndustriesWeServe from "../../components/IndustriesWeServe";
 import LetsTalkSection from "../../components/LetsTalkSection";
+import TraitsSection from "../../components/TraitsSection";
 export async function generateMetadata({ params }) {
   const { slug } = await params; 
 
@@ -55,8 +56,9 @@ export default async function ServicePage({ params }) {
        <WhyEzSection slug={slug} />
        <IndustriesWeServe slug={slug} />
        <LetsTalkSection slug={slug} />
-       {/* <FullStackProcessSection slug={slug} />
-       <BlogFaqSection slug={slug} /> */}
+       <TraitsSection slug={slug}/>
+       <FullStackProcessSection slug={slug} />
+       <BlogFaqSection slug={slug} />
     </>
   );
 }

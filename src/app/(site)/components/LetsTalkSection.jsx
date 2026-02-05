@@ -8,14 +8,17 @@ export default function LetsTalkSection() {
 
   return (
     <section className="lets-talk-wrapper show">
-      <div className="container mx-auto">
-        <div className="section-title-wrap text-center mb-10">
-          <h2 className="text-white">{title}</h2>
-          <p className="text-white max-w-3xl mx-auto">
+      <div className="container mx-auto px-2">
+        <div className="title section-title-wrap">
+          <h2 className="" style={{ color: "white" }}>
+            {title}
+          </h2>
+
+          <p className="text-white max-w-4xl mx-auto">
             {description}
           </p>
         </div>
-        <div className="row justify-center flex flex-col md:flex-row gap-8">
+        <div className="row justify-center w-full flex flex-col md:flex-row gap-8">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -28,7 +31,7 @@ export default function LetsTalkSection() {
                     aria-hidden="true"
                   ></i>
                 </p>
-                <h3>{step.title}</h3>
+                <h3 className="md:mt-6 mt-4">{step.title}</h3>
               </div>
             </div>
           ))}
