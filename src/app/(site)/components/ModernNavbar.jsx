@@ -44,7 +44,7 @@ export default function ModernNavbar() {
   const isAccordionOpen = (menuKey, idx) => open === `${menuKey}-${idx}`;
   return (
     <div className="modern-nav">
-      <header className="main-header">
+      <header className="main-header ">
         <nav className="navbar navbar-expand-lg navbar-custom">
           <div className="container-fluid px2-4">
             <Link className="navbar-brand" href="/">

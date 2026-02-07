@@ -10,6 +10,7 @@ import WhyEzSection from "../../components/WhyEzSection";
 import IndustriesWeServe from "../../components/IndustriesWeServe";
 import LetsTalkSection from "../../components/LetsTalkSection";
 import TraitsSection from "../../components/TraitsSection";
+import WebServicesSection from "../../components/WebServicesSection";
 export async function generateMetadata({ params }) {
   const { slug } = await params; 
 
@@ -48,7 +49,7 @@ export default async function ServicePage({ params }) {
   if (!pageData) return notFound();
 
   return (
-    <main className="inner-page">
+    <main className="pageOffset w-full overflow-x-hidden">
       <InnerPageHeader slug={slug} base="services" />
        <PageAboutSection slug={slug} />
        <EmpoweringSection slug={slug} />
@@ -58,6 +59,7 @@ export default async function ServicePage({ params }) {
        <LetsTalkSection slug={slug} />
        <TraitsSection slug={slug}/>
        <FullStackProcessSection slug={slug} />
+       <WebServicesSection slug={slug} />
        {/* <BlogFaqSection slug={slug} /> */}
     </main>
   );

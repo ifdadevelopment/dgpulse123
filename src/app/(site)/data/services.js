@@ -2675,7 +2675,10 @@ export const NAVBAR = [
     links: [
       { label: "White Label SEO", slug: "white-label-seo-services" },
       { label: "White Label PPC", slug: "white-label-ppc-agency" },
-      { label: "White Label Social Media", slug: "white-label-social-media-agency" },
+      {
+        label: "White Label Social Media",
+        slug: "white-label-social-media-agency",
+      },
     ],
   },
 
@@ -2731,16 +2734,28 @@ export const NAVBAR = [
           { label: "Local SEO Packages", slug: "local-seo-packages" },
           { label: "Ecommerce SEO Packages", slug: "ecommerce-seo-packages" },
           { label: "PPC Packages", slug: "ppc-packages" },
-          { label: "Social Media Packages", slug: "social-media-marketing-packages" },
+          {
+            label: "Social Media Packages",
+            slug: "social-media-marketing-packages",
+          },
           { label: "CRO Packages", slug: "cro-packages" },
-          { label: "ASO Packages", slug: "app-store-marketing-plan-and-packages" },
+          {
+            label: "ASO Packages",
+            slug: "app-store-marketing-plan-and-packages",
+          },
         ],
       },
       {
         title: "Design & Development",
         links: [
-          { label: "Design & Development", slug: "web-design-development-packages" },
-          { label: "Website Design Packages", slug: "web-design-development-packages" },
+          {
+            label: "Design & Development",
+            slug: "web-design-development-packages",
+          },
+          {
+            label: "Website Design Packages",
+            slug: "web-design-development-packages",
+          },
           { label: "YouTube Marketing", slug: "youtube-marketing-packages" },
           { label: "YouTube Packages", slug: "youtube-marketing-packages" },
           { label: "Branding", slug: "orm-packages" },
@@ -2752,10 +2767,16 @@ export const NAVBAR = [
         title: "Resources",
         links: [
           { label: "Our Blog", slug: "blog" },
-          { label: "Digital Strategy Guides", slug: "blog/digital-marketing-strategy-website" },
+          {
+            label: "Digital Strategy Guides",
+            slug: "blog/digital-marketing-strategy-website",
+          },
           { label: "PPC Strategy", slug: "blog/ppc-strategy-trends" },
           { label: "SEO Strategy", slug: "blog/seo-strategy" },
-          { label: "Social Media Strategy", slug: "blog/social-media-marketing-strategy" },
+          {
+            label: "Social Media Strategy",
+            slug: "blog/social-media-marketing-strategy",
+          },
           { label: "Digital Marketing Reports", slug: "contact-us" },
         ],
       },
@@ -2791,7 +2812,8 @@ export const pageAboutData = {
     ],
     links: {
       portfolio: "https://www.ezrankings.com/portfolio.html",
-      package: "https://www.ezrankings.com/web-design-development-packages.html",
+      package:
+        "https://www.ezrankings.com/web-design-development-packages.html",
     },
   },
   cta: {
@@ -2834,8 +2856,7 @@ export const EMPOWERING_STATS_BY_SLUG = {
     ],
   },
   "wordpress-development-company": {
-    heading:
-      "WordPress Development Services Trusted Across the Globe",
+    heading: "WordPress Development Services Trusted Across the Globe",
     items: [
       {
         icon: "/images/filter-icon.webp",
@@ -2943,85 +2964,94 @@ export const WEB_PROCESS_BY_SLUG = {
         id: "step1",
         step: 1,
         label: "Client Requirements",
+        color: "#ff9000",
         title: "Client Requirements",
         content: [
           "At EZ Rankings, a reliable web development company India, we don’t jump straight into execution. We begin by understanding your business and gathering your unique requirements. This first step helps us grasp your vision and what you want from your website.We discuss and clarify your expectations while balancing them with what is feasible. Your business needs are always our priority before we present a final development proposal. Whether you’re a new startup or an established company, you can rely on our web development services.",
-          "This helps us align your vision with feasible technical solutions."
-        ]
+          "This helps us align your vision with feasible technical solutions.",
+        ],
       },
       {
         id: "step2",
         step: 2,
         label: "Customized Plan",
+        color: "#f5c003",
         title: "Customized Plan To Accomplish Your Goals",
         content: [
           "We create a tailored execution plan based on your goals.",
-          "Every solution is customized to strengthen your brand identity."
-        ]
+          "Every solution is customized to strengthen your brand identity.",
+        ],
       },
       {
         id: "step3",
         step: 3,
         label: "Wireframe",
+         color: "#007eb1",
         title: "Wireframe",
         content: [
           "We create wireframes using tools like Figma and Pencil.",
-          "This acts as a blueprint for your website layout."
-        ]
+          "This acts as a blueprint for your website layout.",
+        ],
       },
       {
         id: "step4",
         step: 4,
         label: "Design Approval",
+        color: "#89c700",
         title: "Design Approval",
         content: [
           "We share designs for feedback and approval.",
-          "Optimized for UX and SEO."
-        ]
+          "Optimized for UX and SEO.",
+        ],
       },
       {
         id: "step5",
         step: 5,
         label: "Website Designing",
+        color: "#02af9b",
         title: "Website Designing",
         content: [
           "Approved designs are converted into responsive UI.",
-          "Built with modern HTML5 & CSS."
-        ]
+          "Built with modern HTML5 & CSS.",
+        ],
       },
       {
         id: "step6",
         step: 6,
         label: "Website Development",
+        color: "#007eb1",
         title: "Website Development",
         content: [
           "Development using suitable frameworks & languages.",
-          "Regular progress updates are shared."
-        ]
+          "Regular progress updates are shared.",
+        ],
       },
       {
         id: "step7",
         step: 7,
         label: "Testing By Experts",
+        color: "#3e48d0",
         title: "Testing By Experts",
         content: [
           "Functional, UI & mobile testing.",
-          "Ensuring smooth performance."
-        ]
+          "Ensuring smooth performance.",
+        ],
       },
       {
         id: "step8",
         step: 8,
         label: "Launch the Website",
+        color: "#9031db",
         title: "Launch the Website",
         content: [
           "Website goes live with best hosting setup.",
-          "Post-launch support included."
-        ]
-      }
-    ]
-  }
+          "Post-launch support included.",
+        ],
+      },
+    ],
+  },
 };
+
 export const blogFaqData = {
   "web-development-company-india": {
     blogs: {
@@ -3035,8 +3065,7 @@ export const blogFaqData = {
           date: "July 7th, 2025",
           excerpt:
             "Do you know that website design impacts 94% of first impressions and 75% of web credibility?",
-          url:
-            "https://www.ezrankings.com/blog/how-much-should-i-pay-for-website-development/",
+          url: "https://www.ezrankings.com/blog/how-much-should-i-pay-for-website-development/",
         },
         {
           title: "Website Development Process - A Step By Step Guide",
@@ -3045,8 +3074,7 @@ export const blogFaqData = {
           date: "August 17th, 2023",
           excerpt:
             "Website development is a catch-up term covering all aspects of creating a website.",
-          url:
-            "https://www.ezrankings.com/blog/website-development-process/",
+          url: "https://www.ezrankings.com/blog/website-development-process/",
         },
       ],
     },
@@ -3093,50 +3121,42 @@ export const whyEzData = {
       {
         title: "Experience",
         icon: "two-decades-experience.png",
-        text:
-          "At EZ Rankings, the web development company India we've developed web solutions for 32+ countries. We've coded across domains and developed websites for IT, law firms, medical, tourism, E-commerce, and more.",
+        text: "At EZ Rankings, the web development company India we've developed web solutions for 32+ countries. We've coded across domains and developed websites for IT, law firms, medical, tourism, E-commerce, and more.",
       },
       {
         title: "Professional Team",
         icon: "wide-variety-niches.png",
-        text:
-          "We have a dedicated team of developers who build websites every day using industry-standard tools and frameworks.",
+        text: "We have a dedicated team of developers who build websites every day using industry-standard tools and frameworks.",
       },
       {
         title: "Agile Methodology",
         icon: "no-contract.png",
-        text:
-          "Our website development company follows agile methodology with regular scrum events to ensure quality delivery.",
+        text: "Our website development company follows agile methodology with regular scrum events to ensure quality delivery.",
       },
       {
         title: "Quality Assurance Check",
         icon: "strong-understanding.png",
-        text:
-          "We ensure every website undergoes thorough automated and manual testing before delivery.",
+        text: "We ensure every website undergoes thorough automated and manual testing before delivery.",
       },
       {
         title: "Creativity",
         icon: "resultoriented.png",
-        text:
-          "We create websites that truly reflect your brand identity and business vision.",
+        text: "We create websites that truly reflect your brand identity and business vision.",
       },
       {
         title: "User Interests",
         icon: "white-hat-practices.png",
-        text:
-          "We design websites with end users in mind, focusing on structure, navigation, and experience.",
+        text: "We design websites with end users in mind, focusing on structure, navigation, and experience.",
       },
       {
         title: "Transparency",
         icon: "value-for-money.png",
-        text:
-          "We maintain clear communication and provide regular progress updates.",
+        text: "We maintain clear communication and provide regular progress updates.",
       },
       {
         title: "Flexible Packages",
         icon: "certified-seo-specialists.png",
-        text:
-          "Our web development services are cost-effective and fully customizable.",
+        text: "Our web development services are cost-effective and fully customizable.",
       },
     ],
   },
@@ -3149,74 +3169,62 @@ export const INDUSTRIES_BY_SLUG = {
       {
         title: "Healthcare",
         icon: "/images/indu-icon1.png",
-        desc:
-          "We’ve helped healthcare businesses spread their goodwill with our web development services. Our web development agency can get your dedicated health website ready at full tilt.",
+        desc: "We’ve helped healthcare businesses spread their goodwill with our web development services. Our web development agency can get your dedicated health website ready at full tilt.",
       },
       {
         title: "Food",
         icon: "/images/indu-icon2.png",
-        desc:
-          "Put an engaging foot in front of your audience with our professional web development services. We’ve developed dedicated platforms for culinary businesses worldwide.",
+        desc: "Put an engaging foot in front of your audience with our professional web development services. We’ve developed dedicated platforms for culinary businesses worldwide.",
       },
       {
         title: "B2B",
         icon: "/images/indu-icon3.png",
-        desc:
-          "Get your services or products on a website and sell them to businesses with our cutting-edge website development services.",
+        desc: "Get your services or products on a website and sell them to businesses with our cutting-edge website development services.",
       },
       {
         title: "Education",
         icon: "/images/indu-icon4.png",
-        desc:
-          "Get your educational services in front of your audience with an attractive, conversion-focused website.",
+        desc: "Get your educational services in front of your audience with an attractive, conversion-focused website.",
       },
       {
         title: "Associations",
         icon: "/images/indu-icon5.png",
-        desc:
-          "We deliver the right impression for your organization and provide all the information your members need.",
+        desc: "We deliver the right impression for your organization and provide all the information your members need.",
       },
       {
         title: "Telecom / Tech",
         icon: "/images/indu-icon6.png",
-        desc:
-          "Build a user-friendly website that makes it easy for customers to find and access your services.",
+        desc: "Build a user-friendly website that makes it easy for customers to find and access your services.",
       },
       {
         title: "Non-Profit",
         icon: "/images/indu-icon7.png",
-        desc:
-          "We help foundations showcase their mission clearly and reach more individuals.",
+        desc: "We help foundations showcase their mission clearly and reach more individuals.",
       },
       {
         title: "Financial",
         icon: "/images/indu-icon8.png",
-        desc:
-          "We develop finance websites that help businesses reach wider audiences and build trust.",
+        desc: "We develop finance websites that help businesses reach wider audiences and build trust.",
       },
       {
         title: "Retail",
         icon: "/images/indu-icon9.png",
-        desc:
-          "Boost sales and brand awareness with customized retail web development solutions.",
+        desc: "Boost sales and brand awareness with customized retail web development solutions.",
       },
       {
         title: "Utilities",
         icon: "/images/indu-icon10.png",
-        desc:
-          "We build customized websites for electric, gas, and utility service providers.",
+        desc: "We build customized websites for electric, gas, and utility service providers.",
       },
       {
         title: "Travel",
         icon: "/images/indu-icon11.png",
-        desc:
-          "Beat competition in the travel industry with a performance-driven website.",
+        desc: "Beat competition in the travel industry with a performance-driven website.",
       },
       {
         title: "Chemical",
         icon: "/images/indu-icon12.png",
-        desc:
-          "Whether D2B or D2C, we build chemical websites using modern tech stacks.",
+        desc: "Whether D2B or D2C, we build chemical websites using modern tech stacks.",
       },
     ],
   },
@@ -3252,7 +3260,7 @@ export const WHITE_LABEL_PROCESS = [
     short: "Sign Up <br/>Our Plans",
     content: [
       "Take the first step towards enhancing your business by providing the required information about yourself and signing up for our white label SEO programs.",
-      "Explore our plans and choose the SEO reseller plan that aligns with your goals. Our experts are always available to guide you."
+      "Explore our plans and choose the SEO reseller plan that aligns with your goals. Our experts are always available to guide you.",
     ],
   },
   {
@@ -3262,7 +3270,7 @@ export const WHITE_LABEL_PROCESS = [
     short: "Kick Off <br/> the Projects",
     content: [
       "Share client details and requirements with our team.",
-      "We create a custom strategy aligned with your clients’ goals."
+      "We create a custom strategy aligned with your clients’ goals.",
     ],
   },
   {
@@ -3272,7 +3280,7 @@ export const WHITE_LABEL_PROCESS = [
     short: "Resource <br/>Allocation",
     content: [
       "We assign dedicated SEO experts based on task expertise.",
-      "Advanced SEO tools are used to track and optimize performance."
+      "Advanced SEO tools are used to track and optimize performance.",
     ],
   },
   {
@@ -3282,7 +3290,7 @@ export const WHITE_LABEL_PROCESS = [
     short: "Real-Time <br/>Updates",
     content: [
       "Get transparent, real-time project updates.",
-      "Stay informed throughout the entire campaign lifecycle."
+      "Stay informed throughout the entire campaign lifecycle.",
     ],
   },
   {
@@ -3292,7 +3300,7 @@ export const WHITE_LABEL_PROCESS = [
     short: "White Label <br/>Reporting",
     content: [
       "Receive fully branded white label SEO reports.",
-      "Reports include your logo, brand details, and client-ready formatting."
+      "Reports include your logo, brand details, and client-ready formatting.",
     ],
   },
 ];
@@ -3334,5 +3342,70 @@ export const traits = {
     ],
   },
 };
+export const WEB_SERVICES = {
+  "web-development-company-india": {
+    title: "Web Development Services Designed to Grow Your Business",
+    description:
+      "As a leading web development company India, we deliver high-quality web development services tailored to your business.",
 
+    services: [
+      {
+        slug: "website-design",
+        heading: "Website Design & Development",
 
+        short:
+          "We are a full-stack web development company in India committed to showcasing your business perfectly online.",
+
+        more:
+          "Our dedicated team creates robust, visually appealing, and high-performing websites.",
+
+        logos: [
+          { name: "PHP", img: "/images/PHP-logo.png" },
+          { name: "WordPress", img: "/images/Wordpress.png" },
+          { name: "Magento", img: "/images/Magento.png" },
+          { name: "Shopify", img: "/images/Shopify.png" },
+          { name: "ReactJS", img: "/images/ReactJS.webp" },
+          { name: "Joomla", img: "/images/Joomla.png" },
+          { name: "Drupal", img: "/images/Drupal.png" },
+        ],
+
+        points: [
+          "Full Stack Solutions",
+          "Professional Design",
+          "Cutting Edge Technology",
+          "Responsive Design",
+          "Feature-Rich",
+        ],
+      },
+
+      {
+        slug: "custom-app",
+        heading: "Custom Application Development",
+
+        short:
+          "We create unique web solutions that reflect your brand and services.",
+
+        more:
+          "Every design and layout is crafted to meet your business goals.",
+
+        logos: [
+          { name: "PHP", img: "/images/PHP-logo.png" },
+          { name: "Java", img: "/images/Java.png" },
+          { name: "ReactJS", img: "/images/ReactJS.webp" },
+          { name: "Angular", img: "/images/Angular.png" },
+          { name: "Magento", img: "/images/Magento.png" },
+          { name: "WordPress", img: "/images/Wordpress.png" },
+          { name: "Shopify", img: "/images/Shopify.png" },
+        ],
+
+        points: [
+          "Goal Oriented",
+          "As Per Requirements",
+          "Industry Relevant",
+          "Necessary Features Included",
+          "Improves Branding",
+        ],
+      },
+    ],
+  },
+};
