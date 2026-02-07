@@ -51,7 +51,6 @@ export default function InnerHeroSection({ slug }) {
                                 </button>
                             </div>
                         )}
-
                     </div>
                 </div>
             </div>
