@@ -51,7 +51,7 @@ export default function ModernNavbar() {
               <Image
                 src="/images/logo.webp"
                 alt="EZ Rankings"
-                width={180}
+                width={240}
                 height={50}
                 priority
                 className='img mt-20'

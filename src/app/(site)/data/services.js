@@ -3362,11 +3362,10 @@ export const WEB_SERVICES = {
         logos: [
           { name: "PHP", img: "/images/PHP-logo.png" },
           { name: "WordPress", img: "/images/Wordpress.png" },
-          { name: "Magento", img: "/images/Magento.png" },
           { name: "Shopify", img: "/images/Shopify.png" },
-          { name: "ReactJS", img: "/images/ReactJS.webp" },
-          { name: "Joomla", img: "/images/Joomla.png" },
-          { name: "Drupal", img: "/images/Drupal.png" },
+          { name: "React Js", img: "/images/ReactJS.webp" },
+          { name: "Next Js", img: "/images/nextjs.png" },
+          { name: "Mern Stack", img: "/images/MERN.jpg" },
         ],
 
         points: [
@@ -3392,7 +3391,7 @@ export const WEB_SERVICES = {
           { name: "PHP", img: "/images/PHP-logo.png" },
           { name: "Java", img: "/images/Java.png" },
           { name: "ReactJS", img: "/images/ReactJS.webp" },
-          { name: "Angular", img: "/images/Angular.png" },
+          { name: "Angular", img: "/images/AngularJS.png" },
           { name: "Magento", img: "/images/Magento.png" },
           { name: "WordPress", img: "/images/Wordpress.png" },
           { name: "Shopify", img: "/images/Shopify.png" },
