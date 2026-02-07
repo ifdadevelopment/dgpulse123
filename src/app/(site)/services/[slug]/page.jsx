@@ -59,12 +59,12 @@ export default async function ServicePage({ params }) {
       <PageAboutSection slug={slug} />
       <EmpoweringSection slug={slug} />
       <TechnologyStackSection slug={slug} />
+      <WebServicesSection slug={slug} />
       <WhyEzSection slug={slug} />
       <IndustriesWeServe slug={slug} />
       <LetsTalkSection slug={slug} />
       <TraitsSection slug={slug} />
       <FullStackProcessSection slug={slug} />
-      <WebServicesSection slug={slug} />
       <WebHeroServiceSection slug={slug} />
       <ComplianceReadySection slug={slug} />
       {/* <WhyweChooseDg slug={slug}/> */}
