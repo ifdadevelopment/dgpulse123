@@ -13,7 +13,7 @@ export default function TechnologyStackSection({ slug }) {
     const activeTabData = data.tabs.find(tab => tab.id === activeTab);
 
     return (
-        <section className="technology-lisy-sec bg-gray show py-12">
+        <section className="technology-lisy-sec bg-gray show md:py-12 py-4">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-10">
                     <div className="section-title-wrap pb30 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">

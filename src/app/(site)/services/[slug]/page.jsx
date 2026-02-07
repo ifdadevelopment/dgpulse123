@@ -14,6 +14,7 @@ import WebServicesSection from "../../components/WebServicesSection";
 import WhyweChooseDg from "../../components/WhyweChooseDg";
 import WebHeroServiceSection from "../../components/WebHeroServiceSection";
 import ComplianceReadySection from "../../components/ComplianceReadySection";
+import InnerHeroSection from "../../components/InnerHeroSection";
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
@@ -53,7 +54,8 @@ export default async function ServicePage({ params }) {
 
   return (
     <main className=" w-full overflow-x-hidden">
-      <InnerPageHeader slug={slug} base="services" />
+      <InnerHeroSection slug={slug} />
+      {/* <InnerPageHeader slug={slug} base="services" /> */}
       <PageAboutSection slug={slug} />
       <EmpoweringSection slug={slug} />
       <TechnologyStackSection slug={slug} />

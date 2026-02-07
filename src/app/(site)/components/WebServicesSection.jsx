@@ -36,7 +36,7 @@ function ServiceRow({ heading, short, more, logos, points }) {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-white shadow rounded-xl p-6 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-      <div className="lg:col-span-8">
+      <div className="lg:col-span-9">
         <h3 className="md:text-2xl text-lg font-semibold mb-3">
           {heading}
         </h3>
@@ -58,12 +58,12 @@ function ServiceRow({ heading, short, more, logos, points }) {
               key={i}
               className="w-[90px] flex flex-col items-center text-center text-sm text-gray-700"
             >
-              <div className="h-[44px] w-[44px] flex items-center justify-center mb-2">
+              <div className="h-[54px] w-[54px] flex items-center justify-center mb-2">
                 <Image
                   src={logo.img}
                   alt={logo.name}
-                  width={44}
-                  height={44}
+                  width={54}
+                  height={54}
                   className="object-contain"
                 />
               </div>
@@ -75,7 +75,7 @@ function ServiceRow({ heading, short, more, logos, points }) {
         </ul>
 
       </div>
-      <div className="lg:col-span-4">
+      <div className="lg:col-span-3">
         <ul className="space-y-3">
           {points.map((point, i) => (
             <li key={i} className="flex items-start gap-3 text-gray-700">

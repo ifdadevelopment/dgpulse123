@@ -10,7 +10,7 @@ export default function PageAboutSection({ slug }) {
     if (!data) return null;
 
     return (
-        <section className="page-about-wrapper show py-20">
+        <section className="page-about-wrapper show md:py-20 py-8">
             <div className="container mx-auto px-6">
                 <div className="section-title-wrap">
                     <h1 className="pb30">{data.title}</h1>

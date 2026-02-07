@@ -8,9 +8,9 @@ export default function IndustriesWeServe({ slug }) {
   if (!data) return null;
 
   return (
-    <section className="industries-we-serve py-12">
+    <section className="industries-we-serve md:py-12 py-6">
       <div className="container mx-auto px-4">
-        <div className="section-title-wrap pb30 text-center ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        <div className="section-title-wrap pb30 md:py-10 py-5 text-center ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
           <h2>{data.heading}</h2>
         </div>
 
@@ -21,13 +21,14 @@ export default function IndustriesWeServe({ slug }) {
             sm:grid-cols-2
             md:grid-cols-3
             lg:grid-cols-4
-            gap-6
+            gap-6 
           "
+           
         >
           {data.items.map((item, index) => (
             <li key={index}>
-              <div className="flip-box-inner h-full ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
-                <div className="flip-box-front flex flex-col items-center justify-center text-center p-6">
+              <div className="flip-box-inner h-full ">
+                <div className="flip-box-front flex flex-col items-center justify-center text-center p-6 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                   <figure className="mb-3">
                     <Image
                       src={item.icon}

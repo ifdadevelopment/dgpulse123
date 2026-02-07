@@ -3549,3 +3549,20 @@ export const COMPLIANCE_SECTION_BY_SLUG = {
     ]
   }
 };
+export const SERVICE_HERO = {
+  "web-development-company-india": {
+    // background:
+    //   "/images/custom-application-development-topbanner.webp",
+     backgroundType: "gradient",
+    background:
+      "linear-gradient(to right, #e8bd58, #025073, #ecce5b)",
+    subheading: "CUSTOM APPLICATION",
+    heading: "Innovative Custom Applications Driving Limitless Possibilities",
+    description:
+      "As a leading industry expert, we empower businesses with custom application development services to boost efficiency, enhance productivity, and achieve targets.",
+    cta: {
+      text: "Let's Get Started",
+      modalId: "consultation-modal",
+    },
+  },
+};
