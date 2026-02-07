@@ -10,12 +10,12 @@ export default function InnerHeroSection({ slug }) {
         <section className="relative h-[320px] lg:h-[500px] overflow-hidden py-10">
             <div
                 className="absolute inset-0 bg-center bg-cover "
-                // style={{ backgroundImage: `url(${data.background})` }}
-                style={
-                    data.backgroundType === "gradient"
-                        ? { background: data.background }
-                        : { backgroundImage: `url(${data.background})` }
-                }
+                style={{ backgroundImage: `url(${data.background})` }}
+                // style={
+                //     data.backgroundType === "gradient"
+                //         ? { background: data.background }
+                //         : { backgroundImage: `url(${data.background})` }
+                // }
             />
             <div className="absolute inset-0 bg-black/40" />
             <div className="relative h-full flex items-center">
