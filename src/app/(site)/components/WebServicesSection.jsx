@@ -12,14 +12,14 @@ export default function WebServicesSection({ slug }) {
     <section className="service-section bg-gray md:py-16 py-6">
       <div className="container mx-auto md:px-4 px-2">
         <div className="text-center mb-14">
-          <h2 className="text-2xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-2xl lg:text-4xl font-bold mb-4 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             {data.title}
           </h2>
-          <p className="max-w-7xl mx-auto text-gray-600">
+          <p className="max-w-7xl mx-auto text-gray-600 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             {data.description}
           </p>
         </div>
-        <div className="space-y-20">
+        <div className="space-y-10">
           {data.services.map((service, i) => (
             <ServiceRow key={i} {...service} />
           ))}
@@ -35,7 +35,7 @@ function ServiceRow({ heading, short, more, logos, points }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-white shadow rounded-xl p-6">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-white shadow rounded-xl p-6 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
       <div className="lg:col-span-8">
         <h3 className="md:text-2xl text-lg font-semibold mb-3">
           {heading}
@@ -67,8 +67,6 @@ function ServiceRow({ heading, short, more, logos, points }) {
                   className="object-contain"
                 />
               </div>
-
-              {/* Logo Name */}
               <span className="leading-tight">
                 {logo.name}
               </span>

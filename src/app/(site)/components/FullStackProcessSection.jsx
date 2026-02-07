@@ -22,11 +22,10 @@ export default function FullStackProcessSection({ slug }) {
   return (
     <section className="reseller-programs-work res-pro-work-new show md:py-20 py-10">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="section-title-wrap text-center pb30">
-          <h2 className="text-2xl lg:text-4xl font-semibold">{data.heading}</h2>
+          <h2 className="text-2xl lg:text-4xl font-semibold ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">{data.heading}</h2>
 
-          <p className="mt-3 text-gray-600 max-w-5xl mx-auto">
+          <p className="mt-3 text-gray-600 max-w-5xl mx-auto ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             {data.description}
           </p>
         </div>
@@ -80,12 +79,12 @@ export default function FullStackProcessSection({ slug }) {
             })}
           </ul>
           <div className="tab-content">
-            <h3 className="text-xl lg:text-2xl font-semibold mb-4">
+            <h3 className="text-xl lg:text-2xl font-semibold mb-4 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
               {currentStep.title}
             </h3>
 
             {currentStep.content.map((text, i) => (
-              <p key={i} className="text-gray-600 mb-4">
+              <p key={i} className="text-gray-600 mb-4 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                 {text}
               </p>
             ))}

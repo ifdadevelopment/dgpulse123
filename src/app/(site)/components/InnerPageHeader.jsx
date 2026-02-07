@@ -8,7 +8,7 @@ export default function InnerPageHeader({ slug, base = "services" }) {
   const { title, description, breadcrumbLabel } = page;
 
   return (
-    <main className="inner-page-title">
+    <main className="inner-page-title py-10">
       <div className="breadcrumb-top">
         <div className="container mx-auto px-2">
           <div className="row">
@@ -29,8 +29,6 @@ export default function InnerPageHeader({ slug, base = "services" }) {
                     </Link>
                     <meta itemProp="position" content="1" />
                   </li>
-
-                  {/* Current Page */}
                   <li
                     style={{ display: "inline" }}
                     itemProp="itemListElement"

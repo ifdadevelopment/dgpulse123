@@ -9,16 +9,16 @@ export default function LetsTalkSection() {
   return (
     <section className="lets-talk-wrapper show">
       <div className="container mx-auto px-2">
-        <div className="title section-title-wrap">
+        <div className="title section-title-wrap ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
           <h2 className="" style={{ color: "white" }}>
             {title}
           </h2>
 
-          <p className="text-white max-w-4xl mx-auto">
+          <p className="text-white max-w-4xl mx-auto ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             {description}
           </p>
         </div>
-        <div className="row justify-center w-full flex flex-col md:flex-row gap-8">
+        <div className="row justify-center w-full flex flex-col md:flex-row gap-8 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -36,7 +36,7 @@ export default function LetsTalkSection() {
             </div>
           ))}
         </div>
-        <div className="row">
+        <div className="row ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
           <div className="col-12 text-center">
             <p className="card-55">
               <Link

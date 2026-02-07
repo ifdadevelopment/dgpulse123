@@ -12,10 +12,10 @@ export default function TraitsSection({ slug }) {
     <section className="traits-section traits-section-new bg-[#f2f2f2] show py-14">
       <div className="container mx-auto px-4">
         <div className="section-title-wrap pb30 text-center  mx-auto">
-          <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
+          <h2 className="text-2xl lg:text-3xl font-semibold mb-4 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             {data.heading}
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
             {data.description}
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function TraitsSection({ slug }) {
           {data.services.slice(0, 4).map((service, index) => (
             <div key={index} className="col-md-3">
 
-              <div className="box-design">
+              <div className="box-design ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                 <div className="flip-box-inner">
                   <div className="flip-box-front flex flex-col items-center justify-center text-center p-6">
                     <figure className="mb-4">

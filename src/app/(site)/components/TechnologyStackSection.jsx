@@ -16,10 +16,10 @@ export default function TechnologyStackSection({ slug }) {
         <section className="technology-lisy-sec bg-gray show py-12">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-10">
-                    <div className="section-title-wrap pb30">
+                    <div className="section-title-wrap pb30 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                         <h2>{data.heading}</h2>
                     </div>
-                    <p className="mx-auto">
+                    <p className="mx-auto ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                         {data.description}
                     </p>
                 </div>

@@ -13,16 +13,16 @@ export default function WhyEzSection({ slug }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-4">
             <div className="page-heading text-left mb-4">
-              <h2 className="text-2xl lg:text-3xl font-semibold leading-tight">
+              <h2 className="text-2xl lg:text-3xl font-semibold leading-tight ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                 {data.title}
               </h2>
             </div>
 
-            <article className="commonsection_text text-gray-700">
+            <article className="commonsection_text text-gray-700 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
               <p>{data.intro}</p>
             </article>
 
-            <div className="mt-6">
+            <div className="mt-6 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
               <Image
                 src={data.image.src}
                 alt={data.image.alt}
@@ -33,9 +33,9 @@ export default function WhyEzSection({ slug }) {
             </div>
           </div>
           <div className="lg:col-span-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               {data.cards.map((item, index) => (
-                <div key={index} className="servicescardview_group bg-white p-5 rounded-md shadow-sm h-full">
+                <div key={index} className="servicescardview_group bg-white p-5 rounded-md shadow-sm h-full ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                   <div className="flex items-start gap-4 h-full">
 
                     <div className="servicescardview_icon flex-shrink-0">

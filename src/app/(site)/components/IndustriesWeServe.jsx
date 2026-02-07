@@ -10,7 +10,7 @@ export default function IndustriesWeServe({ slug }) {
   return (
     <section className="industries-we-serve py-12">
       <div className="container mx-auto px-4">
-        <div className="section-title-wrap pb30 text-center">
+        <div className="section-title-wrap pb30 text-center ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
           <h2>{data.heading}</h2>
         </div>
 
@@ -26,7 +26,7 @@ export default function IndustriesWeServe({ slug }) {
         >
           {data.items.map((item, index) => (
             <li key={index}>
-              <div className="flip-box-inner h-full">
+              <div className="flip-box-inner h-full ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                 <div className="flip-box-front flex flex-col items-center justify-center text-center p-6">
                   <figure className="mb-3">
                     <Image

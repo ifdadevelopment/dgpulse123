@@ -11,8 +11,11 @@ import IndustriesWeServe from "../../components/IndustriesWeServe";
 import LetsTalkSection from "../../components/LetsTalkSection";
 import TraitsSection from "../../components/TraitsSection";
 import WebServicesSection from "../../components/WebServicesSection";
+import WhyweChooseDg from "../../components/WhyweChooseDg";
+import WebHeroServiceSection from "../../components/WebHeroServiceSection";
+import ComplianceReadySection from "../../components/ComplianceReadySection";
 export async function generateMetadata({ params }) {
-  const { slug } = await params; 
+  const { slug } = await params;
 
   const pageData = servicePages[slug];
   if (!pageData) return {};
@@ -43,24 +46,27 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ServicePage({ params }) {
-  const { slug } = await params; 
+  const { slug } = await params;
 
   const pageData = servicePages[slug];
   if (!pageData) return notFound();
 
   return (
-    <main className="pageOffset w-full overflow-x-hidden">
+    <main className=" w-full overflow-x-hidden">
       <InnerPageHeader slug={slug} base="services" />
-       <PageAboutSection slug={slug} />
-       <EmpoweringSection slug={slug} />
-       <TechnologyStackSection slug={slug} />
-       <WhyEzSection slug={slug} />
-       <IndustriesWeServe slug={slug} />
-       <LetsTalkSection slug={slug} />
-       <TraitsSection slug={slug}/>
-       <FullStackProcessSection slug={slug} />
-       <WebServicesSection slug={slug} />
-       {/* <BlogFaqSection slug={slug} /> */}
+      <PageAboutSection slug={slug} />
+      <EmpoweringSection slug={slug} />
+      <TechnologyStackSection slug={slug} />
+      <WhyEzSection slug={slug} />
+      <IndustriesWeServe slug={slug} />
+      <LetsTalkSection slug={slug} />
+      <TraitsSection slug={slug} />
+      <FullStackProcessSection slug={slug} />
+      <WebServicesSection slug={slug} />
+      <WebHeroServiceSection slug={slug} />
+      <ComplianceReadySection slug={slug} />
+      {/* <WhyweChooseDg slug={slug}/> */}
+      {/* <BlogFaqSection slug={slug} /> */}
     </main>
   );
 }

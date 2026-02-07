@@ -3408,3 +3408,144 @@ export const WEB_SERVICES = {
     ],
   },
 };
+export const WHY_CHOOSE = {
+  "web-development-company-india": {
+    subheading: "Best Web Development Services in India",
+    heading: "Why Choose Invoidea as Your Web Development Partner?",
+    description:
+      "We are the best website development company in India with a deep understanding of the global market. We serve startups, enterprises, and international businesses with scalable, secure, and high-performance solutions.",
+    background:
+      "/images/webdevelopment-choosebg.webp",
+    items: [
+      {
+        no: "01",
+        title: "Experience With International Clients",
+        desc:
+          "We work with global clients and follow timezone-aligned communication for transparent updates and faster collaboration.",
+      },
+      {
+        no: "02",
+        title: "Business Culture Fluency",
+        desc:
+          "From agile startups to enterprise platforms, we adapt to diverse business cultures and market demands.",
+      },
+      {
+        no: "03",
+        title: "24/7 Support",
+        desc:
+          "Dedicated account managers ensure your website runs smoothly round the clock.",
+      },
+      {
+        no: "04",
+        title: "Familiarity With Regulation",
+        desc:
+          "We follow global security and compliance standards like GDPR, ADA, and CCPA.",
+      },
+      {
+        no: "05",
+        title: "Scalable Tech Stack",
+        desc:
+          "Modern, scalable technologies that grow with your business.",
+      },
+      {
+        no: "06",
+        title: "U.S. Phone Like Availability",
+        desc:
+          "Dedicated U.S. phone line for faster coordination and peace of mind.",
+      },
+    ],
+  },
+};
+// data/webHeroServices.js
+export const WEB_HERO_SERVICES = {
+  "web-development-company-india": {
+    subheading: "Best Web Development Company in India",
+    heading: "Global-Ready Web Development Solutions for Every Industries",
+    description:
+      "Invoidea is a trusted website development company in India, delivering scalable, innovative, and conversion-focused web solutions for global businesses.",
+    cta: {
+      text: "Schedule A Free Consultation",
+      link: "#reach-out-form",
+    },
+    services: [
+      {
+        title: "Frontend Development",
+        desc:
+          "We create intuitive interfaces using HTML5, CSS3, JavaScript, React & Angular.",
+        icon:
+          "/images/frontend-development.svg",
+      },
+      {
+        title: "Backend Development",
+        desc:
+          "Secure, scalable backend using Node.js, PHP, Python, Laravel.",
+        icon:
+          "/images/backend-development.svg",
+      },
+      {
+        title: "Full Stack Development",
+        desc:
+          "End-to-end frontend + backend development for complete solutions.",
+        icon:
+          "/images/full-stack-development.svg",
+      },
+      {
+        title: "CMS Development",
+        desc:
+          "CMS solutions with WordPress, Shopify, Magento.",
+        icon:
+          "/images/cms.svg",
+      },
+      {
+        title: "Databases",
+        desc:
+          "MySQL, MongoDB integrations for scalable data handling.",
+        icon:
+          "/images/data-base.png",
+      },
+      {
+        title: "DevOps Stack",
+        desc:
+          "AWS, Docker & GitHub for fast, secure deployments.",
+        icon:
+          "/images/devOps-stack.png",
+      },
+    ],
+  },
+};
+export const COMPLIANCE_SECTION_BY_SLUG = {
+  "web-development-company-india": {
+    subheading: "Web Development Services From India for Worldwide",
+    heading: "Compliance-Ready Websites (ADA, GDPR, CCPA, HIPAA)",
+    description: `
+      Compliance is no longer optional — especially in the US.
+      As a famous website development company in India with a strong presence in
+      Australia, Canada, and Europe, we ensure your website meets international
+      compliance standards from day one.
+    `,
+    backgroundImage:
+      "/images/compliance-center-img.webp",
+    items: [
+      {
+        title: "ADA Accessibility",
+        text:
+          "We follow WCAG 2.1 guidelines and integrate alt-text, keyboard navigation, proper contrast ratios, and accessibility features to ensure inclusivity for all users."
+      },
+      {
+        title: "Security by Default",
+        text:
+          "Every website is built with SSL security by default to protect users and improve trust while browsing."
+      },
+      {
+        title: "HIPAA-Ready for Healthcare Clients",
+        text:
+          "We develop secure, fast, HIPAA-compliant platforms for healthcare businesses to protect patient data and enable secure appointments and payments."
+      },
+      {
+        title: "GDPR & CCPA Compliance",
+        text:
+          "Clear cookie consent banners and compliant privacy policies are implemented to meet EU (GDPR) and California (CCPA) regulations."
+      }
+    ]
+  }
+};
