@@ -3471,7 +3471,7 @@ export const WEB_HERO_SERVICES = {
       {
         title: "Frontend Development",
         desc:
-          "We create intuitive interfaces using HTML5, CSS3, JavaScript, React & Angular.",
+          " We create intuitive user interfaces using HTML5, CSS3,JavaScript, and frameworks like React & Angular for a seamless experience on all devices.",
         icon:
           "/images/frontend-development.svg",
       },
