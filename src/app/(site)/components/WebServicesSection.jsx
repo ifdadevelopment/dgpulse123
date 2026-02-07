@@ -9,7 +9,7 @@ export default function WebServicesSection({ slug }) {
   if (!data) return null;
 
   return (
-    <section className="service-section bg-gray md:py-16 py-6">
+    <section className="service-section bg-light md:py-16 py-6">
       <div className="container mx-auto md:px-4 px-2">
         <div className="text-center mb-14">
           <h2 className="text-2xl lg:text-4xl font-bold mb-4 ani-heading aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
